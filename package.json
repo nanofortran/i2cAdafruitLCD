@@ -1,4 +1,8 @@
 {
   "name": "i2cAdaFruitLCD",
-  "version": "0.0.3"
+  "version": "0.0.3",
+  "author": "Jason Geist",
+  "contributors": [
+    "Bob Cochran <r2cochran2@gmail.com>"
+  ]
 }
