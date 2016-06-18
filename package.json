@@ -5,6 +5,10 @@
   "contributors": [
     "Bob Cochran <r2cochran2@gmail.com>"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nanofortran/i2cAdafruitLCD"
+  },
   "dependencies": {
     "johnny-five": "^0.9.56"
   }
