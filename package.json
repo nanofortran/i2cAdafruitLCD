@@ -1,5 +1,6 @@
 {
   "name": "i2cAdaFruitLCD",
+  "description": "node.js implementation for controlling HD44780-based LCD modules",
   "version": "0.0.3",
   "author": "Jason Geist",
   "contributors": [
@@ -11,5 +12,6 @@
   },
   "dependencies": {
     "johnny-five": "^0.9.56"
-  }
+  },
+  "license": "MIT"
 }
