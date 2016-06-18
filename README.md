@@ -16,6 +16,7 @@ sleep 3.x "sleep" and "usleep" functionality for node.js
 ### Hardware
 
 Raspberry Pi 2 Model B
+
 Adafruit I2C LCD Backpack
 
 ### Datasheets
