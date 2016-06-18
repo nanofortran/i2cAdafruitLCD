@@ -2,7 +2,7 @@
 
 This code uses the Johnny-Five library/module to control the MCP23008 expander board found on the Adafruit I2C LCD backpack (Product No. 292) cited here: https://www.adafruit.com/products/292, and thus control the Hitachi HD44780 LCD controller. It is based upon earlier Arduino libraries from LadyAda and others,but is mainly grounded in the inspired work of Donald Weimann, whose seminal monograph on the instricacies of the HD44780 can be found here: http://web.alfredstate.edu/weimandn/  Portions of Weiman's naming schemes, diagrams, and annotations have been retained for pedagogical purposes.
 
-## Dependencies
+### Dependencies
 
 Node.js 6.x (testing currently in progress on 6.2.2)
 
@@ -13,7 +13,7 @@ raspi-io 6.x Firmata-compatible Raspberry Pi I/O API
 sleep 3.x "sleep" and "usleep" functionality for node.js
 
 
-## Hardware
+### Hardware
 
 Raspberry Pi 2 Model B
 Adafruit I2C LCD Backpack
@@ -26,7 +26,7 @@ MCP23008:
 HD44780:
 https://cdn-shop.adafruit.com/datasheets/HD44780.pdf
 
-## Hardware Connections
+### Hardware Connections
 
 The four data lines and two control lines as designed by Adafruit connect pins GP1, GP2, GP2, GP4, GP5, and GP6 to the HD44780 controller pins RE, E, D4, D5, D6, and D7, respectively.
 
@@ -48,37 +48,37 @@ The connections to the I2C backpack might vary according to your RasPi model, fo
 
 The code to implement turning on and off of the backlight has not been included in this version, but may be added at a later time.               
 
-##Include
-var LCD = require('./MPC23008.js');
+### Include
+`var LCD = require('./MPC23008.js');`
 
-##Constructor
-var theLCD = new LCD(0x23); //one argument, the address of the MPC23008 you are addressing in hex
+### Constructor
+`var theLCD = new LCD(0x23); //one argument, the address of the MPC23008 you are addressing in hex`
 
-##Functions
+### Functions
 
-###.print(string)
-//print string . . . string begins printing at cursor placement
+#### .print(string)
+print string . . . string begins printing at cursor placement
 
-###.clear()
-//clear the LCD
+#### .clear()
+clear the LCD
 
-###.home()       
-//return cursor to home, (first line, first character space) without clearing the screen
+#### .home()       
+return cursor to home, (first line, first character space) without clearing the screen
 
-###.lineSet(line)    
-//set line (row), defaults to character space 0
+#### .lineSet(line)    
+set line (row), defaults to character space 0
 
-###.cursorSet(line, space)  
-//set cursor to a specific line and space
+#### .cursorSet(line, space)  
+set cursor to a specific line and space
 
-###.center(line, string)
-//center the string on the line indicated (best fit, odd length strings will be shifted right one space)
+#### .center(line, string)
+center the string on the line indicated (best fit, odd length strings will be shifted right one space)
 
-###.on()
-//turn LCD on
+#### .on()
+turn LCD on
 
-###.off()
-//turn LCD off
+#### .off()
+turn LCD off
 
 
 
