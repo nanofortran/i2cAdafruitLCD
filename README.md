@@ -3,10 +3,15 @@
 This code uses the Johnny-Five library/module to control the MCP23008 expander board found on the Adafruit I2C LCD backpack (Product No. 292) cited here: https://www.adafruit.com/products/292, and thus control the Hitachi HD44780 LCD controller. It is based upon earlier Arduino libraries from LadyAda and others,but is mainly grounded in the inspired work of Donald Weimann, whose seminal monograph on the instricacies of the HD44780 can be found here: http://web.alfredstate.edu/weimandn/  Portions of Weiman's naming schemes, diagrams, and annotations have been retained for pedagogical purposes.
 
 ## Dependencies
+
 Node.js 6.x (testing currently in progress on 6.2.2)
+
 johnny-five 0.9+ JavaScript Robotics and Testing Framework
+
 raspi-io 6.x Firmata-compatible Raspberry Pi I/O API
+
 sleep 3.x "sleep" and "usleep" functionality for node.js
+
 
 ## Hardware
 
