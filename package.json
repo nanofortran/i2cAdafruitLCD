@@ -4,5 +4,8 @@
   "author": "Jason Geist",
   "contributors": [
     "Bob Cochran <r2cochran2@gmail.com>"
-  ]
+  ],
+  "dependencies": {
+    "johnny-five": "^0.9.56"
+  }
 }
