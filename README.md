@@ -1,6 +1,6 @@
 # i2cAdafruitLCD
 
-This code uses the Johnny-Five library/module to control the MCP23008 expander board found on the Adafruit I2C LCD backpack (Product No. 292) cited here: https://www.adafruit.com/products/292, and thus control the Hitachi HD44780 LCD controller. It is based upon earlier Arduino libraries from LadyAda and others,but is mainly grounded in the inspired work of Donald Weimann, whose seminal monograph on the instricacies of the HD44780 can be found here: http://web.alfredstate.edu/weimandn/  Portions of Weiman's naming schemes, diagrams, and annotations have been retained for pedagogical purposes.
+Control of the MCP23008 chip using Node.js and ES6. This code uses the Johnny-Five robotics software library/module to control the MCP23008 expander board found on the Adafruit I2C LCD backpack (Product No. 292) cited here: https://www.adafruit.com/products/292, and thus control the Hitachi HD44780 LCD controller. It is based upon earlier Arduino libraries from LadyAda and others, but is mainly grounded in the inspired work of Donald Weimann, whose seminal monograph on the instricacies of the HD44780 can be found here: http://web.alfredstate.edu/weimandn/  Portions of Weiman's naming schemes, diagrams, and annotations have been retained for pedagogical purposes.
 
 ### Dependencies
 
