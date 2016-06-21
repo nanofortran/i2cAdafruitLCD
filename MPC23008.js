@@ -214,8 +214,8 @@ this.lcdWriteInstructions(LCD.lcdHome);
 sleep.usleep(10); 
 }
 
-//lineSet(line) - set the cursor to a specific line, at character place 0
-LCD.prototype.lineSet = function(line){
+//setLine(line) - set the cursor to a specific line, at character place 0
+LCD.prototype.setLine = function(line){
   if(line && line  == 1){
     this.lcdWriteInstructions(LCD.lcdSetCursor | LCD.lcdLineOne);
   }
@@ -224,8 +224,8 @@ LCD.prototype.lineSet = function(line){
   }
 }
 
-//cursorSet(line, space) - set cursor to line and space of your choosing
-LCD.prototype.cursorSet = function(line, space){
+//setCursor(line, space) - set cursor to line and space of your choosing
+LCD.prototype.setCursor = function(line, space){
   if(line && line == 1){
     this.lcdWriteInstructions(LCD.lcdSetCursor | LCD.lcdLineOne + space);
   }
@@ -237,7 +237,7 @@ LCD.prototype.cursorSet = function(line, space){
 //center(line, theString) - center text on line of your choosing
 LCD.prototype.center = function(line, theString){
   var l = theString.length;
-  this.cursorSet(line, l/2);
+  this.setCursor(line, l/2);
   this.print(theString);  
 }
 
@@ -245,7 +245,7 @@ LCD.prototype.center = function(line, theString){
 LCD.prototype.flyIn = function(theString, line, delay){
   
   for(var i = 16; i > -1; i--){
-    this.cursorSet(line, i);
+    this.setCursor(line, i);
     this.print(theString);
     sleep.usleep(delay * 1000);
   }
