@@ -65,10 +65,10 @@ var theLCD = new LCD(0x23); //one argument, the address of the MPC23008 you are 
 ###.home()       
 //return cursor to home, (first line, first character space) without clearing the screen
 
-###.lineSet(line)    
+###.setLine(line)    
 //set line (row), defaults to character space 0
 
-###.cursorSet(line, space)  
+###.setCursor(line, space)  
 //set cursor to a specific line and space
 
 ###.center(line, string)
