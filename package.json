@@ -11,7 +11,8 @@
     "url": "https://github.com/nanofortran/i2cAdafruitLCD"
   },
   "dependencies": {
-    "johnny-five": "^0.9.56"
+    "johnny-five": "^0.9.56",
+    "raspi-io": "^8.1.0"
   },
   "license": "MIT"
 }
